@@ -1,0 +1,382 @@
+:root{
+  --label: transparent;
+  --borderLabel: hsla(0, 0%, 92%, 1);
+}
+*{
+    font-family: "Commissioner", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "FLAR" 0,
+      "VOLM" 0;
+  }
+  /******************************* header class ******************************/
+  body{
+    background-color: hsl(0, 0%, 97%)
+  }
+  header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    z-index: 10;
+  }
+ 
+  .logo{width: 30vw;}
+  .navContent summary{
+    list-style: none;
+  }
+  /******************************* menu class ******************************/
+  .dark{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;  
+  }
+  .nav{
+    margin: 5.5rem 1.5rem 0 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: .4rem;
+  }
+  .line{border-bottom: 0.1rem solid hsla(0, 0%, 92%, 1);}
+  .navDiv{padding: 1.52rem;}
+  .navText{ font-weight: 600; font-size: 1.15rem;}
+  .no-scroll {
+    overflow: hidden;
+  }
+  /******************************* article class ******************************/
+  .imgHero{
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      width: 100%;
+  }
+article{
+  margin: 10.1rem 2rem 0 2rem ;
+ 
+}
+.sect{ 
+  background-color: hsl(0, 0%, 100%);
+  border-bottom: 0.1rem solid hsla(0, 0%, 92%, 1);
+  margin-bottom: 1.5rem;
+  padding: 2rem 1.5rem  2rem;
+  display: grid;
+  justify-items: center;
+  border-radius: .5rem;
+}
+.mastercraft{
+  position: absolute;
+  transform: translateY(-4rem);
+}
+/************ sect1 **************/
+h1{
+  margin: 1.2rem 0 .5rem 0; 
+  font-size: 1.2rem; 
+  width: 15rem;
+  text-align: center; 
+  font-weight: 700;
+}
+p{
+  color: hsl(0, 0%, 48%);
+  font-weight: 400;
+  font-size: 0.825rem;
+  min-width: 5rem;
+  line-height: 1.3rem;
+}
+.titleFooter{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.buttonsContent{
+  display: flex;
+}
+.button{
+  background-color: hsl(176, 50%, 47%);
+  padding: 1rem 2rem;
+  height: max-content;
+  border: none;
+  border-radius: 2rem;
+  color: hsl(0, 0%, 100%);
+  font-size: .8rem;
+}
+.button:hover{
+  background-color: hsl(176, 72%, 28%);
+}
+.bigButton{font-size: 1rem ;}
+.bookmarkConteiner{
+  width: max-content;
+}
+.bookmark{
+  margin-left: .5rem;
+}
+.circle{fill: #2F2F2F;}
+.path {fill: #B1B1B1}
+.circle:hover{fill: hsl(0, 0%, 48%);}
+.greenBook{fill: hsl(176, 72%, 28%)}
+.whitePath{fill:hsla(0, 0%, 92%, 1);  }
+.greenBook:hover{
+  opacity: 0.75;
+}
+.bookmarkLabel{
+  display: none;
+}
+/************ sect2 **************/
+#sect2{
+  padding-top: .9rem;
+}
+.gridDiv{
+  display: grid;
+  justify-items: center;
+}
+.gridTitle{
+  font-size: 2rem;
+  color: hsl(0, 0%, 0%);
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.gridSubTitle{
+  color: hsl(0, 0%, 48%);
+  font-size: .8rem;
+  margin-bottom: 1.5rem;
+}
+.lineDiv{
+  width: 5rem;
+  border-top: solid hsl(0, 0%, 48%) .1rem;
+  opacity: 0.2;
+}
+.barContainer{width: 100%;}
+.bar{
+  width: 100%;
+  background-color: hsl(0, 0%, 48%);
+  height: 0.6rem;
+  opacity: 0.1;
+  border-radius: 1rem;
+}
+.barSpace{
+  position: relative;
+  transform: translateY(-.61rem);
+  background-color: hsl(176, 50%, 47%);
+  z-index: 10;
+  opacity: 1;
+  width: 12rem;
+}
+/************ sect3 **************/
+h2{
+  margin: 0;
+  text-align: left;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.reward{
+  border: 0.15rem solid hsla(0, 0%, 92%, 1);
+  border-radius: .5rem;
+  padding: 1.3rem;
+  margin: 1rem 0;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+h3{
+  margin-bottom: .5rem;
+  font-size: .8rem;
+  font-weight: 800;
+}
+.rewardSubTitle{
+  color: hsl(176, 50%, 47%);
+  font-size: .8rem;
+  font-weight: 500;
+}
+.rewardFooter{margin: 1.5rem 0 1.5rem 0; display: flex; align-items: center;}
+.available{font-size: 1.75rem; font-weight: 700;}
+.amount{font-size: .8rem; color: hsl(0, 0%, 48%); margin-left: .75rem;}
+
+
+.opcity{
+  opacity: .5;
+}
+.none{background-color: hsl(0, 0%, 48%); ;}
+
+/****************************** Form styles ********************************/
+.dark2, .dark3{
+  display: none;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  z-index: 100;  
+  padding: 7.5rem 1rem;
+}
+.formRewardConteiner{
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  width: 100%;
+  height: 87.5%;
+  /* padding-bottom: 5rem;  */
+}
+form, .alert{
+  background-color: hsl(0, 0%, 100%);
+  width: 77%;
+  height: 75%; 
+  border-radius: .5rem;
+  padding: 2rem 1.5rem;
+  overflow: hidden;
+}
+form{scroll-padding: 1.3rem;}
+.formRewardConteiner::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+.formHeader{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.formTitle{
+  margin: 0 0 .75rem 0;
+  font-size: 1.2rem;
+}
+.closeModal{height: max-content;}
+/**************** reward styles ******************/
+.rewardForm{margin-top: 1.5rem;}
+summary{
+  list-style: none;
+}
+.rewardHeaderForm{
+  padding: 0 0 .5rem 0;
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+}
+#rewardHeaderForm1{
+  padding: 0 0 .2rem 0;
+}
+#rewardOff{
+  pointer-events: none;
+}
+/******** radio styles **********/
+.radio {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.radio + label:before {
+  position: relative;
+  transform: translate( .925rem, -.32rem);
+  content: "";
+  display: inline-block;
+  width: .6rem;
+  height: .6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--label);
+}
+.radio + label::after{
+  margin-top: .5rem;
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.15rem solid var(--borderLabel);
+  cursor: pointer;
+}
+/* Cambiar el color del pseudo-elemento cuando el radio button está seleccionado */
+input[type="radio"]:checked + label:before {
+  background-color: hsl(176, 50%, 47%);
+}
+/*******************************/
+.rewardtitleConteiner{
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 .75rem;
+  height: 4rem;
+}
+.pledgeTittle{
+  margin: 0 0 .5rem 0;
+  font-weight: 800;
+  display: inline;
+  font-size: .8rem;
+}
+#pledgeTittle1{
+  margin-top: .65rem;
+}
+.pledgeSubTitle{
+  color: hsl(176, 50%, 47%);
+  font-size: .8rem;
+}
+.availableContainer{
+  position: relative;
+  transform: translate(-2.5rem, 9.25rem);
+}
+.rewardP{
+  margin-bottom: 3rem;
+  max-width: 13.5rem;
+}
+#rewardP1{
+  margin-bottom: .75rem;
+}
+.smallAvailable{font-size: 1rem; font-weight: 700;}
+.amount{margin: .4rem;}
+/************** pledge styles *****************/
+hr{
+  position: relative;
+  width: 170%;
+  transform: translateX(-1.3rem);
+  color: hsla(0, 0%, 92%, 1);
+  opacity: .4;
+  margin-top: 4rem;
+}
+.selectedPledge{
+  padding: 1rem 0;
+  text-align: center;
+}
+.pledgeSpan, .dollar{
+  font-size: .8rem;
+  color: hsl(0, 0%, 48%);
+}
+.pledgeContainer{
+  margin-top: 1rem;
+  display: flex;
+  font-size: .8rem;
+  justify-content: space-between;
+}
+.pledge{
+  width: 5rem;
+  padding: .9rem .5rem;
+  text-align: center;
+  border-radius: 3rem;
+  border: 0.15rem solid hsla(0, 0%, 92%, 1);
+  outline: none;
+  font-weight: 700;
+}
+.continue{
+  padding: 1rem 1.5rem;
+}
+.dollar{
+  position: relative;
+  transform: translate(-11.45rem,1rem);
+}
+/***************************** Success start *********************************/
+.success{
+  width: 77%;
+  height: 38.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.check{width: 4rem;}
+.successTitle{font-size: 1.2rem; font-weight: 700;}
+.successP{text-align: center; margin: 1.1rem 0 2rem 0;}
+
+
+
+
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
