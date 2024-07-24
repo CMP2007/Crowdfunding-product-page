@@ -163,7 +163,7 @@ p{
   background-color: hsl(176, 50%, 47%);
   z-index: 10;
   opacity: 1;
-  width: 12rem;
+  width: 77%;
 }
 /************ sect3 **************/
 h2{
@@ -254,7 +254,7 @@ summary{
 #rewardHeaderForm1{
   padding: 0 0 .2rem 0;
 }
-#rewardOff{
+.rewardOff{
   pointer-events: none;
 }
 /******** radio styles **********/
