@@ -176,7 +176,7 @@ h2{
 .reward{
   border: 0.15rem solid hsla(0, 0%, 92%, 1);
   border-radius: .5rem;
-  padding: 1.3rem;
+  padding: 1.4rem;
   margin: 1rem 0;
   overflow: hidden;
   transition: all 1s ease;
@@ -296,6 +296,7 @@ input[type="radio"]:checked + label:before {
   flex-direction: column;
   margin: 0 0 0 .75rem;
   height: 4rem;
+  position: relative;
 }
 .pledgeTittle{
   margin: 0 0 .5rem 0;
@@ -311,12 +312,13 @@ input[type="radio"]:checked + label:before {
   font-size: .8rem;
 }
 .availableContainer{
-  position: relative;
-  transform: translate(-2.5rem, 9.25rem);
+  position: absolute;
+  transform: translate(-2.5rem, 11.5rem);
 }
 .rewardP{
   margin-bottom: 3rem;
-  max-width: 13.5rem;
+  width: 13.5rem;
+  /* max-width: 16.5rem; */
 }
 #rewardP1{
   margin-bottom: .75rem;
@@ -344,6 +346,7 @@ hr{
   margin-top: 1rem;
   display: flex;
   font-size: .8rem;
+  position: relative; 
   justify-content: space-between;
 }
 .pledge{
@@ -359,8 +362,8 @@ hr{
   padding: 1rem 1.5rem;
 }
 .dollar{
-  position: relative;
-  transform: translate(-11.45rem,1rem);
+  position: absolute;
+  margin: 2.2vh 0 0 3.75vh;
 }
 /***************************** Success start *********************************/
 .success{
@@ -374,9 +377,47 @@ hr{
 .successTitle{font-size: 1.2rem; font-weight: 700;}
 .successP{text-align: center; margin: 1.1rem 0 2rem 0;}
 
-
-
-
-
   .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
+
+  @media (min-width: 407px) {
+    .availableContainer{
+      transform: translate(-2.5rem, 10.2rem);   
+    }
+    .pledgeContainer{
+      max-width: 15rem;
+    }
+    .selectedPledge{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .space{
+      margin: 0 .65rem;
+    }
+    .rewardP{
+      width: auto;
+    }
+  }
+
+  @media (min-width: 435px) {
+    .rewardP{
+      max-width: 16rem;
+      margin-left: 10%;
+    }
+  }
+
+  @media (min-width: 505px) {
+    .rewardP{
+      max-width: none;
+    }
+    .move{
+      transform: translate(-2.5rem, 9.2rem);  
+    }
+  }
+
+  @media (min-width: 550px) {
+    .rewardP{
+      max-width: 19.5rem;
+    }
+  }
