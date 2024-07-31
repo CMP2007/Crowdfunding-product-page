@@ -13,13 +13,25 @@
   <link rel="stylesheet" href="./normalice.css">
   <link rel="stylesheet" href="./styles.css">
 
-
 </head>
-<body class="">
+<body>
   <header>
     <img src="./images/logo.svg" alt="" class="logo">
+    <!--------------- nav desktop --------------->>
+    <nav class="navDesktop">
+      <div class="navDiv line">
+        <span class="navText">About</span>
+      </div>
+      <div class="navDiv line">
+        <span class="navText">Discover</span>
+      </div>
+      <div class="navDiv">
+        <span class="navText">Get Started</span>
+      </div>
+    </nav>
+     <!-- --------------nav movil ---------------->
     <details class="navContent" id="navDetails">
-      <summary>
+      <summary class="summaryNav">
         <img src="./images/icon-hamburger.svg" alt="" class="hamburger">
       </summary>
       <div class="dark" id="dark1">
@@ -37,10 +49,12 @@
       </div>
     </details>
   </header>
+  
   <div class="background">
     <img src="./images/image-hero-mobile.jpg" class="imgHero" loading="lazy">
   </div>
   <article>
+
    <section class="sect">
       <img src="./images/logo-mastercraft.svg" class="mastercraft" alt="">
       <h1>Mastercraft Bamboo Monitor Riser</h1>
@@ -50,13 +64,15 @@
         <div class="bookmarkConteiner">
           <svg width="56" class="bookmark" height="56" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle class="circle" cx="28" cy="28" r="28"/><path class="path" d="M23 19v18l5-5.058L33 37V19z"/></g></svg>
           <label for="bookmark" class="bookmarkLabel">Bookmark</label>
+          <div class="back"></div>
         </div>
       </div>
    </section>
-   <section class="sect">
+
+   <section class="sect" id="sect2">
         <div class="gridDiv">
-          <span class="gridTitle">$89,914</span>
-          <span class="gridSubTitle">of $100,000 backed</span>
+          <span class="gridTitle" id="gridTitle1">$89,914</span>
+          <span class="gridSubTitle" id="gridSubTitle1">of $100,000 backed</span>
         </div>
         <div class="lineDiv"></div>
         <div class="gridDiv">
@@ -65,21 +81,21 @@
         </div>
         <div class="lineDiv"></div>
         <div class="gridDiv">
-          <span class="gridTitle">56</span>
-          <span class="gridSubTitle">days left</span>
+          <span class="gridTitle" id="gridTitle3">56</span>
+          <span class="gridSubTitle" id="gridSubTitle3">days left</span>
         </div>
      <div class="barContainer">
         <div class="bar"></div>
         <div class="bar barSpace"></div>
      </div>
    </section>
-   <section class="sect">
+
+   <section class="sect" id="sect3">
     <h2>About this project</h2>
     <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you stay focused on the task at hand.</p>
-
     <p>Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow notepads, pens, and USB sticks to be stored under the stand.</p>
-
-    <div class="reward">
+    
+    <div class="reward r1">
       <div class="rewardHeader">
         <h3 class="rewardTitle">Bamboo Stand</h3>
         <span class="rewardSubTitle">Pledge $25 or more</span>
@@ -91,7 +107,8 @@
       </div>
       <input type="button" value="Select Reward" class="button">
     </div>
-    <div class="reward">
+
+    <div class="reward r1">
       <div class="rewardHeader">
         <h3 class="rewardTitle">Black Edition Stand</h3>
         <span class="rewardSubTitle">Pledge $75 or more</span>
@@ -103,7 +120,8 @@
       </div>
       <input type="button" value="Select Reward" class="button">
     </div>
-    <div class="reward opcity">
+
+    <div class="reward opcity r1">
       <div class="rewardHeader">
         <h3 class="rewardTitle">Mahogany Special Edition</h3>
         <span class="rewardSubTitle">Pledge $200 or more</span>
@@ -116,20 +134,22 @@
       <input type="button" value="Out of Stock" class="button none">
     </div>
    </section>
+
   </article>
 
-  <!-- Selection modal start -->
-
+  <!--------------- Selection modal start --------------->
   <div class="dark dark2">
     <form action="">
+
       <div class="formHeader">
         <img src="./images/icon-close-modal.svg" class="closeModal" alt="">
         <h3 class="formTitle">Back this project</h3>
       </div>
       <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+      
       <section class="formRewardConteiner">
 
-        <details class="reward" id="details1">
+        <details class="reward formReward" id="details1">
           <summary>
             <div class="rewardHeaderForm" id="rewardHeaderForm1">
             <input type="radio" name="rewards" id="reward1" class="radio">
@@ -142,49 +162,48 @@
           </summary>
           <hr>
             <!-- Selected pledge start -->
-            <div class="selectedPledge">
-              <span class="pledgeSpan">Enter your pledge</span>
-              <div class="pledgeContainer">
-                <input type="text" name="" id="" value="" placeholder="0" class="pledge space" maxlength="3">
-                <input type="button" value="Continue" class="continue button opcity  space">
-                <span class="dollar">$</span>
-              </div>
+          <div class="selectedPledge">
+            <span class="pledgeSpan">Enter your pledge</span>
+            <div class="pledgeContainer">
+              <input type="text" name="" id="" value="" placeholder="0" class="pledge space" maxlength="3">
+              <input type="button" value="Continue" class="continue button opcity  space">
+              <span class="dollar">$</span>
             </div>
-          </details>
+          </div>
+        </details>
           <!-- Selected pledge end -->
     
-    
-          <details class="reward" id="details2">
-            <summary>
-              <div class="rewardHeaderForm">
-                <input type="radio" name="rewards" id="reward2" class="radio">
-                <label for="reward2"></label>
-                <div class="rewardtitleConteiner">
-                  <h4 class="pledgeTittle">Bamboo Stand</h4>
-                  <span class="pledgeSubTitle">Pledge $25 or more</span>
-                  <div class="availableContainer">
-                    <span class="smallAvailable">101</span>
-                    <span class="amount">left</span>
-                  </div>
+        <details class="reward formReward" id="details2">
+          <summary>
+            <div class="rewardHeaderForm">
+              <input type="radio" name="rewards" id="reward2" class="radio">
+              <label for="reward2"></label>
+              <div class="rewardtitleConteiner">
+                <h4 class="pledgeTittle">Bamboo Stand</h4>
+                <span class="pledgeSubTitle">Pledge $25 or more</span>
+                <div class="availableContainer">
+                  <span class="smallAvailable">101</span>
+                  <span class="amount">left</span>
                 </div>
               </div>
-              <p class="rewardP">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
-            </summary>
-              <!-- Selected pledge start -->
-              <hr>
-              <div class="selectedPledge">
-                <span class="pledgeSpan">Enter your pledge</span>
-                <div class="pledgeContainer">
-                  <input type="text" name="" id="" value="25" class="pledge space" placeholder="0" maxlength="3">
-                  <input type="button" value="Continue" class="continue button space">
-                  <span class="dollar">$</span>
-                </div>
-              </div>
-            </details>
+            </div>
+            <p class="rewardP">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
+          </summary>
+            <!-- Selected pledge start -->
+          <hr>
+          <div class="selectedPledge">
+            <span class="pledgeSpan">Enter your pledge</span>
+            <div class="pledgeContainer">
+              <input type="text" name="" id="" value="25" class="pledge space" placeholder="0" maxlength="3">
+              <input type="button" value="Continue" class="continue button space">
+              <span class="dollar">$</span>
+            </div>
+          </div>
+        </details>
         <!-- Selected pledge end -->
         
         
-        <details class="reward" id="details3">
+        <details class="reward formReward" id="details3">
           <summary>
             <div class="rewardHeaderForm">
               <input type="radio" name="rewards" id="reward3" class="radio">
@@ -201,20 +220,20 @@
             <p class="rewardP">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
           </summary>
             <!-- Selected pledge start -->
-            <hr>
-            <div class="selectedPledge">
-              <span class="pledgeSpan">Enter your pledge</span>
-              <div class="pledgeContainer">
-                <input type="text" name="" id="" value="75" class="pledge space" placeholder="0" maxlength="3">
-                <input type="button" value="Continue" class="continue button space">
-                <span class="dollar">$</span>
-              </div>
+          <hr>
+          <div class="selectedPledge">
+            <span class="pledgeSpan">Enter your pledge</span>
+            <div class="pledgeContainer">
+              <input type="text" name="" id="" value="75" class="pledge space" placeholder="0" maxlength="3">
+              <input type="button" value="Continue" class="continue button space">
+              <span class="dollar">$</span>
             </div>
-          </details>
+          </div>
+        </details>
         <!-- Selected pledge end -->
         
         
-        <details class="reward opcity rewardOff" >
+        <details class="reward opcity formReward rewardOff" >
           <summary>
             <div class="rewardHeaderForm">
               <input type="radio" name="rewards" id="reward4" class="radio">
@@ -231,24 +250,24 @@
             <p class="rewardP">You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
           </summary>
             <!-- Selected pledge start -->
-            <hr>
-            <div class="selectedPledge">
-              <span class="pledgeSpan">Enter your pledge</span>
-              <div class="pledgeContainer">
-                <input type="text" name="" id="" value="200" class="pledge space" placeholder="0" maxlength="3">
-                <input type="button" value="Continue" class="continue button space">
-                <span class="dollar">$</span>
-              </div>
+          <hr>
+          <div class="selectedPledge">
+            <span class="pledgeSpan">Enter your pledge</span>
+            <div class="pledgeContainer">
+              <input type="text" name="" id="" value="200" class="pledge space" placeholder="0" maxlength="3">
+              <input type="button" value="Continue" class="continue button space">
+              <span class="dollar">$</span>
             </div>
-          </details>
-        </section>
+          </div>
+        </details>
+      </section>
       <!-- Selected pledge end -->
     </form>
   </div>
-  <!-- Selection modal end -->
+  <!--------------- Selection modal end --------------->
 
   
-  <!-- Success modal start -->
+  <!--------------- Success modal start --------------->
    <div class="dark dark3">
     <section class="alert success">
       <img src="./images/icon-check.svg" alt="" class="check">
@@ -257,7 +276,7 @@
     <input type="button" value="Got it!" class="button">
     </section>
   </div>
-  <!-- Success modal end -->
+  <!--------------- Success modal end --------------->
 </body>
 <script src="./scripts.js"></script>
 </html>
