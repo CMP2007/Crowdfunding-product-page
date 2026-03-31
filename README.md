@@ -1,60 +1,48 @@
-# Frontend Mentor - Crowdfunding product page solution
+# Crowdfunding Product Page: Interactive Fundraising Component
 
-This is a solution to the [Crowdfunding product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This repository is evidence of my learning journey. It represents a project I undertook to refine my layout and complex component logic skills before my current specialization in Full Stack development.
 
-## Table of contents
+**Note:** The design and assets were provided by Frontend Mentor. My role was the technical implementation from scratch.
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
+---
 
-## Overview
+## 🌟 About this project
+The **Mastercraft Bamboo Monitor Riser** is a conceptual crowdfunding landing page. This project was my first deep dive into building a "system" rather than just a page. 
 
-### The challenge
+The core objective was to create a seamless user experience where backers could:
+1. View project progress in real-time via a dynamic progress bar.
+2. Interact with a multi-step selection modal to choose different reward tiers.
+3. Experience a fully responsive interface that transitions smoothly from mobile to desktop.
 
-Users should be able to:
+It showcases the transition from basic HTML structures to interactive components that handle data (donations, backer counts, and stock availability) using Vanilla JavaScript.
 
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
-- Make a selection of which pledge to make
-- See an updated progress bar and total money raised based on their pledge total after confirming a pledge
-- See the number of total backers increment by one after confirming a pledge
-- Toggle whether or not the product is bookmarked
+---
+
+## 🚀 Links
+* **Live Demo:** [SEE DEMO HERE](https://cmp2007.github.io/Crowdfunding-product-page/)
+* **Frontend Mentor Profile:** [View my solutions](https://www.frontendmentor.io/profile/CMP2007)
+* **Original Challenge:** [Crowdfunding product page](https://www.frontendmentor.io/solutions/crowdfunding-product-page-jYddIafWyj)
 
 ### Screenshot
 
 ![](./images/screenshot1.jpg)
 ![](./images/screenshot2.jpg)
 
-### Links
+---
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR/hub?share=true)
-- Live Site URL: [Add live site URL here](https://cmp2007.github.io/Crowdfunding-product-page/)
+## 📋 Evolution & Context Note
+> ⚠️ **Note on my trajectory:** This project was a major milestone where I moved beyond simple UI components to a more complex system involving state management (manual), modal flows, and form validations. It documents my transition from basic static pages to interactive web applications using **Vanilla JavaScript**.
 
-## My process
+## 📋 Technical Milestones of this Stage
+In this phase of my learning, I successfully implemented:
 
-### Built with
+* **Stateful UI Logic:** Developed a system to track total donations and backer counts, updating the UI dynamically (including a functional progress bar) without page reloads.
+* **Complex Modal Flow:** Implementation of a multi-step modal system for reward selection, including "Success" alerts and background scroll locking for better UX.
+* **Semantic Disclosure Widgets:** Extensive use of the `<details>` and `<summary>` tags, not just for menus but as a structural base for the interactive reward selection forms.
+* **Advanced CSS Layouts:** Combined **CSS Grid** and **Flexbox** to handle a complex responsive design, including a hero image swap via CSS and custom radio button styling.
+* **Data Validation & Formatting:** Used the `Intl.NumberFormat` API to ensure currency and numbers were displayed correctly to the user after each donation.
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-
-### What I learned
-
-This practice helped me to review everything I had learned or reinforced in the junior-level practices I did at Frontend Mentor.
-
-### Continued development
-
-My next step is to take some courses, although I am not very clear if they will be theoretical courses on programming concepts or language courses in which I can get a certificate.
-
-## Author
-
-- Frontend Mentor - [@CarlosPuche](https://www.frontendmentor.io/profile/CMP2007)
+## 🛠️ Technologies (at the time)
+* **Vanilla JavaScript:** Complex event handling, arithmetic logic for crowdfunding goals, and DOM manipulation.
+* **HTML5 & CSS3:** Semantic structure, custom form elements, and advanced Responsive Design.
+* **Normalize.css:** Ensuring consistent rendering across all modern browsers.
